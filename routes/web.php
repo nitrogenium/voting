@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FoldersController::class, 'index']);
+Route::get('/', [FoldersController::class, 'index'])->name('index');
 
 Route::get('/voting/{folder_id}', [ImagesController::class,'index'])->name('folder');
 
